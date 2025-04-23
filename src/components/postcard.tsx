@@ -22,7 +22,7 @@ const Cards = () => {
           <div key={post.id} className="card bg-base-100 shadow-sm max-w-xs sm:max-w-sm md:max-w-md">
             <figure>
               <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                src={`https://picsum.photos/200/300?random=${post.id}`}
                 alt="Shoes"
                 className="w-full h-48 object-cover"
               />
