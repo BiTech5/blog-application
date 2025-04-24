@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <>
@@ -15,45 +16,45 @@ const Header = () => {
                                 tabIndex={0}
                                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
                             >
-                                <li><a href="/">Home</a></li>
+                                <li><NavLink to="/">Home</NavLink></li>
                                 <li>
-                                    <a>Categories</a>
+                                    <NavLink to="/">Categories</NavLink>
                                     <ul className="p-2">
-                                        <li><a href="/category/tech">Tech</a></li>
-                                        <li><a href="/category/lifestyle">Lifestyle</a></li>
-                                        <li><a href="/category/news">News</a></li>
+                                        <li><NavLink to="/category/tech">Tech</NavLink></li>
+                                        <li><NavLink to="/category/lifestyle">Lifestyle</NavLink></li>
+                                        <li><NavLink to="/category/news">News</NavLink></li>
                                     </ul>
                                 </li>
-                                <li><a href="/about">About</a></li>
-                                <li><a href="/contact">Contact</a></li>
+                                <li><NavLink to="/about">About</NavLink></li>
+                                <li><NavLink to="/contact">Contact</NavLink></li>
                             </ul>
                         </div>
-                        <a href="/" className="btn btn-ghost text-xl font-bold">MyBlog</a>
+                        <NavLink to="/" className="btn btn-ghost text-xl font-bold">MyBlog</NavLink>
                     </div>
 
                     {/* desktop site navbar */}
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
-                            <li><a href="/">Home</a></li>
+                            <li><NavLink to="/">Home</NavLink></li>
                             <li>
                                 <details>
                                     <summary>Categories</summary>
                                     <ul className="p-2">
-                                        <li><a href="/category/tech">Tech</a></li>
-                                        <li><a href="/category/lifestyle">Lifestyle</a></li>
-                                        <li><a href="/category/news">News</a></li>
+                                        <li><NavLink to="/category/tech">Tech</NavLink></li>
+                                        <li><NavLink to="/category/lifestyle">Lifestyle</NavLink></li>
+                                        <li><NavLink to="/category/news">News</NavLink></li>
                                     </ul>
                                 </details>
                             </li>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/contact">Contact</a></li>
+                            <li><NavLink to="/about">About</NavLink></li>
+                            <li><NavLink to="/contact">Contact</NavLink></li>
                         </ul>
                     </div>
 
 
                     <div className="navbar-end gap-2">
                         <input type="text" placeholder="Search..." className="input input-bordered input-sm hidden md:inline-block w-36" />
-                        <a href="/subscribe" className="btn btn-primary btn-sm">Subscribe</a>
+                        <NavLink to="/subscribe" className="btn btn-primary btn-sm">Subscribe</NavLink>
                     </div>
                 </nav>
             </header>
