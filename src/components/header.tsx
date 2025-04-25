@@ -22,38 +22,9 @@ const Header = () => {
                                 <li><NavLink to="/">Home</NavLink></li>
                                 <li><NavLink to="/about">About</NavLink></li>
                                 <li><NavLink to="/contact">Contact</NavLink></li>
-                                <li><label className="flex cursor-pointer gap-2">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round">
-                                        <circle cx="12" cy="12" r="5" />
-                                        <path
-                                            d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
-                                    </svg>
-                                    <input type="checkbox" onClick={toogleTheme} className="toggle theme-controller" value={theme} />
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round">
-                                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                                    </svg>
-                                </label></li>
                             </ul>
                         </div>
-                        <NavLink to="/" className="btn btn-ghost text-xl font-bold">MyBlog</NavLink>
+                        <NavLink to="/" className=" btn-ghost text-xl font-bold ">MyBlog</NavLink>
                     </div>
 
                     {/* desktop site navbar */}
@@ -62,7 +33,12 @@ const Header = () => {
                             <li><NavLink to="/">Home</NavLink></li>
                             <li><NavLink to="/about">About</NavLink></li>
                             <li><NavLink to="/contact">Contact</NavLink></li>
-                            <li><label className="flex cursor-pointer gap-2">
+                        </ul>
+                    </div>
+
+
+                    <div className="navbar-end gap-2">
+                    <label className="flex  gap-2">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20"
@@ -90,14 +66,7 @@ const Header = () => {
                                     strokeLinejoin="round">
                                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                                 </svg>
-                            </label></li>
-                        </ul>
-                    </div>
-
-
-                    <div className="navbar-end gap-2">
-                        <input type="text" placeholder="Search..." className="input input-bordered input-sm hidden md:inline-block w-36" />
-                        <NavLink to="/subscribe" className="btn btn-primary btn-sm">Subscribe</NavLink>
+                            </label>
                     </div>
                 </nav>
             </header>

@@ -24,8 +24,8 @@ const Cards = () => {
           <div key={post.id} className="card bg-base-100 shadow-sm max-w-xs sm:max-w-sm md:max-w-md">
             <figure>
               <img
-                src={`https://picsum.photos/200/300?random=${post.id}`}
-                alt="Shoes"
+                src={`https://picsum.photos/200/300?random=${post.id}ll`}
+                alt="blog-img"
                 className="w-full h-48 object-cover"
               />
             </figure>
