@@ -2,14 +2,15 @@ import BlogAPI from "../services/Blogapi";
 import { useEffect, useState } from "react";
 import { iblog } from "../models/blog_model";
 // this cards component fetch data from blogapi and show in responsive grid layout
+import { Link } from "react-router-dom";
 const Cards = () => {
     const [posts, SetPost] = useState<iblog[] | null>(null);
 
     useEffect(
         () => {
-            BlogAPI.getBlog().then(
+            BlogAPI.getBlog('').then(
                 (res) => {
-                    console.log(res.data)
+                    // console.log(res.data)
                     SetPost(res.data);
                 }
             ).catch((err) => { console.error("Error: ", err) })
@@ -31,7 +32,7 @@ const Cards = () => {
               <h2 className="card-title">{post.title}</h2>
               <p>{post.body}</p>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Read More</button>
+                <Link className="btn btn-primary" to={`/posts/${post.id}`}>Read More</Link>
               </div>
             </div>
           </div>

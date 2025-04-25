@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const BlogAPI = {
-    getBlog: () => {
-        return axios.get("https://jsonplaceholder.typicode.com/posts");
+    getBlog: (para:string) => {
+        return axios.get(`https://jsonplaceholder.typicode.com/posts/${para}`);
     }
 };
 
