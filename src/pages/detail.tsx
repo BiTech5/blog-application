@@ -13,10 +13,21 @@ const Detail = () => {
     }, [id]);
 
     return (
-        <>
-            <h1>{data?.title}</h1>
-            <p>{data?.body}</p>
-        </>
+        <div className="hero bg-base-200 min-h-screen">
+            <div className="hero-content flex-col lg:flex-row">
+                <img
+                    src={`https://picsum.photos/200/300?random=${id}`}
+                    className="max-w-sm rounded-lg shadow-2xl"
+                />
+                <div>
+                    <h1 className="text-5xl font-bold">{data?.title}</h1>
+                    <p className="py-6">
+                        {data?.body}
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
     );
 };
 
