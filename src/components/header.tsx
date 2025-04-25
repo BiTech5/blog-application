@@ -17,14 +17,6 @@ const Header = () => {
                                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
                             >
                                 <li><NavLink to="/">Home</NavLink></li>
-                                <li>
-                                    <NavLink to="/">Categories</NavLink>
-                                    <ul className="p-2">
-                                        <li><NavLink to="/category/tech">Tech</NavLink></li>
-                                        <li><NavLink to="/category/lifestyle">Lifestyle</NavLink></li>
-                                        <li><NavLink to="/category/news">News</NavLink></li>
-                                    </ul>
-                                </li>
                                 <li><NavLink to="/about">About</NavLink></li>
                                 <li><NavLink to="/contact">Contact</NavLink></li>
                             </ul>
@@ -36,16 +28,6 @@ const Header = () => {
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
                             <li><NavLink to="/">Home</NavLink></li>
-                            <li>
-                                <details>
-                                    <summary>Categories</summary>
-                                    <ul className="p-2">
-                                        <li><NavLink to="/category/tech">Tech</NavLink></li>
-                                        <li><NavLink to="/category/lifestyle">Lifestyle</NavLink></li>
-                                        <li><NavLink to="/category/news">News</NavLink></li>
-                                    </ul>
-                                </details>
-                            </li>
                             <li><NavLink to="/about">About</NavLink></li>
                             <li><NavLink to="/contact">Contact</NavLink></li>
                         </ul>
