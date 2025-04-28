@@ -13,7 +13,7 @@ function App() {
       <ThemeProvider>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/blog-application" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/posts/:id" element={<Detail />} />
           <Route path="/about" element={<About />} />
